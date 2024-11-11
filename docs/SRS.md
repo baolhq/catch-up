@@ -30,7 +30,18 @@ Approval history
 	1.5 General description
 2. Functional requirements
 3. Non-functional requirements
+	1. Security
+	2. Capacity
+	3. Compatibility
+	4. Reliability
+	5. Maintainability
+	6. Usability
+	7. Other non-functional requirements
 4. External interface requirements
+	1. User interface requirements
+	2. Hardware interface requirements
+	3. Software interface requirements
+	4. Communication interface requirements
 5. Definitions and acronyms
 ### 1. Introduction
 *Describe the purpose of the document.*
@@ -46,7 +57,41 @@ Approval history
 ##### 1.5 General description
 *Give a summary of the functions the software would perform and the features to be included.*
 ### 2. Functional requirements
-*List the design requirements, graphics requirements, operating system requirements, and constraints of the product.*
+##### Advanced Authentication and Security
+* Login
+   * Login via Email
+   * Login via Google
+* Register
+* Reset Password
+* Two-Factor Authentication (2FA)
+* Set a PIN or custom password for the chat application (planned for later versions)
+
+##### Chat Features
+* Basic messaging
+* Notifications and activity reports
+* Multimedia messages (planned for later versions)
+* Stickers (GIFs)
+* Active status and "Typing..." indicator
+* Create and manage groups
+* Pin and search messages
+* Reminders and event alerts
+* Tagging and replying to messages
+
+##### User Management
+* **Account and Profile Management**: Allows users to update personal information, set profile picture, status, and display name.
+* **Social media account linking**
+* **Role and Permission Management**: Assign roles such as admin and regular user, with specific permissions (e.g., permission to delete messages, manage groups).
+* **Favorite Contacts and Groups**: Create a list of favorite friends and groups for easier access.
+* **User Reporting and Blocking**: Users can report or block violating accounts, and admins can review reports and manage blocked accounts.
+
+##### Content and Storage Management
+* **Content Filtering and Banned Words**: Set banned words and filter out inappropriate content.
+* **Storage Management**: Limit file size or image dimensions sent in chats, allowing admins to efficiently manage storage usage.
+
+##### Notification Management and Interface Customization
+* **Advanced Notification Settings**: Allow users to adjust various notification types for groups, individual messages, or specific contacts.
+* **Interface Customization**: Users can change the theme, colors, and toggle light/dark modes to create a personalized chat experience.
+* **Dark mode**
 
 ### 3. Non-functional requirements
 
