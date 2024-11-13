@@ -18,23 +18,23 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({
-                                           children
-                                         }: {
+    children
+}: {
   children: React.ReactNode;
 }) {
   const session = await auth();
   return (
       <html lang="en">
-      <body
-          className={`${inter.className} overflow-hidden `}
-          suppressHydrationWarning={true}
-      >
-      <NextTopLoader showSpinner={false} />
-      <Providers session={session}>
-        <Toaster />
-        {children}
-      </Providers>
-      </body>
+          <body
+              className={`${inter.className} overflow-hidden `}
+              suppressHydrationWarning={true}
+          >
+              <NextTopLoader showSpinner={false} />
+              <Providers session={session}>
+                <Toaster />
+                {children}
+              </Providers>
+          </body>
       </html>
   );
 }
